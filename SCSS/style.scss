@@ -1,0 +1,15 @@
+@import "variables";
+@import "mixins";
+@import "extends";
+@import "header";
+@import "home";
+@import "servicios";
+@import "nosotros";
+@import "proyectos";
+@import "contacto";
+
+body{
+    background-color: $light-color;
+    color: $text-color;
+}
+
