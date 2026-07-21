@@ -11,7 +11,7 @@ Sitio web institucional desarrollado como proyecto final del curso de Desarrollo
 
 ## Características
 
-- Diseño responsive.
+- Diseño responsable.
 - Navegación entre 5 páginas.
 - Animaciones y transiciones.
 - Sitio publicado en GitHub Pages y Netlify.
