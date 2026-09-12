@@ -32,7 +32,7 @@ header{
         color: white;
     }
 
-   @media (max-width: 991px){
+  @media (max-width: 991px){
 
     .navbar{
         position: absolute;
@@ -43,8 +43,11 @@ header{
     }
 
     .navbar-collapse{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100vw !important;
         background: #0F172A !important;
-        width: 100% !important;
         padding: 15px 20px !important;
         margin: 0 !important;
         border-radius: 0 0 10px 10px;

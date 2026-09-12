@@ -24,6 +24,7 @@
     h1{
         color: #fff;
         font-size: 5rem;
+        max-width: 100%;
         font-weight: 700;
         line-height: 1.1;
         margin-bottom: 25px;
@@ -265,4 +266,13 @@
     }
 
 }
+@media (max-width: 991px){
 
+    .hero h1{
+        font-size: clamp(2.5rem, 11vw, 4rem);
+    }
+
+    .hero{
+        overflow-x: hidden;
+    }
+}
