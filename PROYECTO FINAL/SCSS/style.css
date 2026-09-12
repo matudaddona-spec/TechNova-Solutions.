@@ -890,21 +890,47 @@ body {
 }
 @media (max-width: 991px) {
 
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+
+    /* MENU DE CELULAR */
+
     header .navbar {
         position: relative !important;
+        width: 100%;
         background: #0F172A !important;
     }
 
     header .navbar-collapse {
+        position: static !important;
+        width: 100%;
         background: #0F172A !important;
         padding: 10px 20px 15px;
     }
 
-    header .nav-link {
-        margin-left: 0 !important;
-        padding: 12px 0 !important;
-        color: #fff !important;
+    header .navbar-collapse.show {
+        display: block !important;
     }
+
+    header .navbar-nav {
+        width: 100%;
+        margin: 0 !important;
+    }
+
+    header .nav-item {
+        width: 100%;
+    }
+
+    header .nav-link {
+        width: 100%;
+        margin: 0 !important;
+        padding: 12px 0 !important;
+        color: #F8FAFC !important;
+    }
+
+    /* HERO */
 
     .hero {
         overflow: hidden;
@@ -912,14 +938,10 @@ body {
 
     .hero h1 {
         font-size: 2.7rem;
+        line-height: 1.1;
     }
 
     .hero p {
         font-size: 1rem;
-    }
-
-    html,
-    body {
-        overflow-x: hidden !important;
     }
 }
