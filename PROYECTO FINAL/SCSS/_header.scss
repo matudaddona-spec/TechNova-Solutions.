@@ -1,49 +1,61 @@
 header{
 
-    .navbar{
+    width: 100%;
 
+    .navbar{
         position: fixed;
         top: 0;
         left: 0;
-
         width: 100%;
-
         background: transparent !important;
-
         transition: .4s ease;
-
         z-index: 1000;
-
     }
 
     .navbar.scrolled{
-
         background: rgba(15,23,42,.95) !important;
-
         backdrop-filter: blur(10px);
-
         box-shadow: 0 10px 30px rgba(0,0,0,.20);
-
     }
 
     .navbar-brand{
-
         font-size: 1.8rem;
         font-weight: bold;
-
     }
 
     .nav-link{
-
         margin-left: 15px;
         transition: .3s;
-
     }
 
     .nav-link:hover{
-
         color: white;
-
     }
 
+    @media (max-width: 991px){
+
+        .navbar{
+            background: #0F172A !important;
+        }
+
+        .navbar-collapse{
+            background: #0F172A !important;
+            padding: 15px 20px;
+            margin-top: 0;
+            border-radius: 0 0 10px 10px;
+            width: 100%;
+        }
+
+        .navbar-nav{
+            width: 100%;
+            align-items: flex-start;
+        }
+
+        .nav-link{
+            width: 100%;
+            margin-left: 0;
+            padding: 12px 0 !important;
+            color: #F8FAFC !important;
+        }
+    }
 }

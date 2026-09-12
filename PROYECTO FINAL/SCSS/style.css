@@ -5,6 +5,9 @@
   text-align: center;
 }
 
+header {
+  width: 100%;
+}
 header .navbar {
   position: fixed;
   top: 0;
@@ -29,6 +32,28 @@ header .nav-link {
 }
 header .nav-link:hover {
   color: white;
+}
+@media (max-width: 991px) {
+  header .navbar {
+    background: #0F172A !important;
+  }
+  header .navbar-collapse {
+    background: #0F172A !important;
+    padding: 15px 20px;
+    margin-top: 0;
+    border-radius: 0 0 10px 10px;
+    width: 100%;
+  }
+  header .navbar-nav {
+    width: 100%;
+    align-items: flex-start;
+  }
+  header .nav-link {
+    width: 100%;
+    margin-left: 0;
+    padding: 12px 0 !important;
+    color: #F8FAFC !important;
+  }
 }
 
 .hero {
@@ -807,58 +832,34 @@ body {
   color: #1E293B;
 }
 
-/* AJUSTES RESPONSIVE */
+.stats h3 {
+  color: #2563EB;
+  font-size: 3rem;
+  font-weight: bold;
+}
+.stats p {
+  font-size: 1.1rem;
+}
+
+/* AJUSTE ANCHO EN CELULAR */
 @media (max-width: 991px) {
-  html,
+  html {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: clip !important;
+  }
   body {
     width: 100%;
     max-width: 100%;
-    overflow-x: hidden !important;
+    overflow-x: clip !important;
   }
-  * {
-    box-sizing: border-box;
-  }
-  header {
+  main {
     width: 100%;
     max-width: 100%;
-  }
-  header .navbar {
-    width: 100%;
-    background-color: #0F172A !important;
-    position: relative;
-    z-index: 1000;
-  }
-  .navbar-collapse {
-    width: 100%;
-    background-color: #0F172A !important;
-    padding: 15px 20px;
-    margin: 0;
-    border-radius: 0 0 10px 10px;
-    position: relative;
-    z-index: 1001;
-  }
-  .navbar-collapse .navbar-nav {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .navbar-collapse .nav-link {
-    color: #F8FAFC !important;
-    padding: 12px 0 !important;
-    margin: 0 !important;
-    width: 100%;
-  }
-  .hero,
-  .contact-hero,
-  .projects-hero,
-  .services-header {
-    max-width: 100%;
-    overflow: hidden;
+    overflow-x: clip;
   }
   img,
   video {
     max-width: 100%;
-    height: auto;
   }
 }/*# sourceMappingURL=style.css.map */
