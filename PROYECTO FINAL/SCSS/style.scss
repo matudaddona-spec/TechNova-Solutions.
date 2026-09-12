@@ -50,7 +50,7 @@ body{
     header .navbar {
         width: 100%;
         background-color: #0F172A !important;
-        position: relative;
+        position: relative !important;
         z-index: 1000;
     }
 
@@ -76,4 +76,22 @@ body{
         color: #F8FAFC !important;
     }
 
+    main,
+    section,
+    .hero,
+    .productos,
+    .productos-container,
+    .sobre,
+    .contacto {
+        max-width: 100%;
+    }
+
+    .productos-container {
+        width: 100%;
+    }
+
+    .hero-image img {
+        max-width: 100%;
+        height: auto;
+    }
 }
