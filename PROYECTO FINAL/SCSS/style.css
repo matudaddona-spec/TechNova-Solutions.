@@ -887,4 +887,39 @@ body {
     font-size: 1rem;
     line-height: 1.6;
   }
-}/*# sourceMappingURL=style.css.map */
+}
+@media (max-width: 991px) {
+
+    header .navbar {
+        position: relative !important;
+        background: #0F172A !important;
+    }
+
+    header .navbar-collapse {
+        background: #0F172A !important;
+        padding: 10px 20px 15px;
+    }
+
+    header .nav-link {
+        margin-left: 0 !important;
+        padding: 12px 0 !important;
+        color: #fff !important;
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+
+    .hero h1 {
+        font-size: 2.7rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    html,
+    body {
+        overflow-x: hidden !important;
+    }
+}
