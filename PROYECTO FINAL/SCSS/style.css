@@ -9,7 +9,7 @@ header {
   width: 100%;
 }
 header .navbar {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -35,6 +35,10 @@ header .nav-link:hover {
 }
 @media (max-width: 991px) {
   header .navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     background: #0F172A !important;
   }
   header .navbar-collapse {
