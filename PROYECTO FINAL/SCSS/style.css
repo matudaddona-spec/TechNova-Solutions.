@@ -857,3 +857,26 @@ body {
         box-sizing: border-box;
     }
 }
+/* AJUSTE RESPONSIVE */
+@media (max-width: 991px) {
+
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden !important;
+    }
+
+    .navbar-collapse {
+        background-color: #0F172A !important;
+        padding: 15px 20px;
+        margin-top: 10px;
+        border-radius: 0 0 10px 10px;
+        width: 100%;
+    }
+
+    .navbar-collapse .nav-link {
+        color: #F8FAFC !important;
+        padding: 10px 0 !important;
+    }
+}
