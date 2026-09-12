@@ -807,54 +807,53 @@ body {
   color: #1E293B;
 }/*# sourceMappingURL=style.css.map */
 
-/* AJUSTES PARA CELULAR */
+/* MENU RESPONSIVE */
 @media (max-width: 991px) {
 
-    body {
-        overflow-x: hidden;
-    }
-
     header .navbar {
-        background: #0F172A !important;
+        background-color: #0F172A !important;
     }
 
     header .navbar-collapse {
-        background: #0F172A;
+        background-color: #0F172A !important;
         padding: 15px 20px;
-        border-radius: 0 0 12px 12px;
-    }
-
-    header .navbar-nav {
-        align-items: flex-start;
-    }
-
-    header .nav-link {
-        margin-left: 0;
-        padding: 10px 0;
-    }
-
-    .hero {
-        min-height: 100vh;
+        margin-top: 10px;
+        border-radius: 10px;
         width: 100%;
     }
 
-    .hero .hero-content {
-        max-width: 100%;
-        padding: 80px 0 40px;
+    header .navbar-nav {
+        width: 100%;
+        align-items: flex-start;
     }
 
-    .hero h1 {
-        font-size: 2.5rem;
-        line-height: 1.15;
-        margin-bottom: 20px;
+    header .nav-item {
+        width: 100%;
     }
 
-    .hero p {
+    header .nav-link {
+        color: #F8FAFC !important;
         font-size: 1rem;
-        line-height: 1.6;
+        padding: 12px 0 !important;
+        margin: 0 !important;
+        width: 100%;
     }
 
-    .hero-buttons {
-        gap: 12px;
+    header .nav-link:hover {
+        color: #38BDF8 !important;
+    }
+}
+
+/* AJUSTE PARA CELULARES */
+@media (max-width: 991px) {
+    html,
+    body {
+        width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    * {
+        box-sizing: border-box;
     }
 }
